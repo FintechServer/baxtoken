@@ -1,4 +1,3 @@
-var address = '0x0';
 
 module.exports = {
   networks: {
