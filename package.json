@@ -1,0 +1,27 @@
+{
+  "name": "baxtoken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "zeppelin-solidity": "1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "truffle --network development test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FintechServer/baxtoken.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FintechServer/baxtoken/issues"
+  },
+  "homepage": "https://github.com/FintechServer/baxtoken#readme"
+}
