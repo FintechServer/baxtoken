@@ -9,20 +9,17 @@ pragma solidity ^0.4.18;
 import 'zeppelin-solidity/contracts/token/StandardToken.sol';
 import 'zeppelin-solidity/contracts/token/BurnableToken.sol';
 import 'zeppelin-solidity/contracts/token/CappedToken.sol';
+import 'zeppelin-solidity/contracts/token/DetailedERC20.sol';
 
 
-contract BaxToken is StandardToken, BurnableToken, CappedToken {
-  string public constant name = "BAX";
-  string public constant symbol = "BAX";
-  uint8 public constant decimals = 18;
-
-  // 50B tokens
-  uint256 public constant MAX_SUPPLY = 50 * (10**9) * (10 ** uint256(decimals));
-
+contract BaxToken is DetailedERC20, StandardToken, BurnableToken, CappedToken {
   /**
-   * @dev Set the maximum issuance cap.
+   * @dev Set the maximum issuance cap and token details.
    */
-  function BaxToken() CappedToken( MAX_SUPPLY ) public {
+  function BaxToken()
+    DetailedERC20('BAX', 'BAX', 18)
+    CappedToken( 50 * (10**9) * (10**18) )
+  public {
 
   }
 }
