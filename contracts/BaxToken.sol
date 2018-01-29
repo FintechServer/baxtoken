@@ -2,9 +2,7 @@ pragma solidity ^0.4.18;
 
 
 /**
- * Use OpenZeppelin Libraries 1.5.0
- *   https://registry.npmjs.org/zeppelin-solidity/-/zeppelin-solidity-1.5.0.tgz
- *   sha512-X4Z7JNarpK71BqiHn/vYrKM1Xul/YeDM9Wr8i2TnTPZSmsUWFy4R4vRxyMk3td58UKvApidWejtgHOC7rkSSew==",
+ * Use OpenZeppelin Libraries
  */
 import 'zeppelin-solidity/contracts/token/StandardToken.sol';
 import 'zeppelin-solidity/contracts/token/BurnableToken.sol';
